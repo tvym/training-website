@@ -367,7 +367,6 @@ describe('API вебдодатку сайту про левів', () => {
                 gender: 'female',
                 description: 'Злий лев',
                 prideSize: '3',
-
             });
             const savedLion = await testLion.save();
 

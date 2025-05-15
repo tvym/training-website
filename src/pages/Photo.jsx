@@ -3,18 +3,18 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Photo() {
   const images = [
-    { src: '/images/1200px-haas-in-het-grasjpg.webp', alt: 'Дикий лев' },
-    { src: '/images/1200px-hasebeioberwerbejpg.webp', alt: 'Гарний лев' },
-    { src: '/images/european-hare-6121jpg.webp', alt: 'Лев біля води' },
-    { src: '/images/fFKuESpf7VTCGBNPscig.webp', alt: 'Молоді леви' },
-    { src: '/images/halljnes.webp', alt: 'Левиця' },
-    { src: '/images/zu6YRoYqGYVyExZ54dDT.webp', alt: 'Молодий лев' }
+    { src: '/images/0tJCsKwwWYPVlS4eT2tn.webp', alt: 'Дикий лев' },
+    { src: '/images/7bwx1JU4ITGWfUfq9lS3.webp', alt: 'Гарний лев' },
+    { src: '/images/qHTCNtrq88BOnEkXDSNm.webp', alt: 'Лев біля води' },
+    { src: '/images/tKhqxkD4V4umSGdYcrVN.webp', alt: 'Молоді леви' },
+    { src: '//images/v16rNxfAju6fNGFB1pzS.webp', alt: 'Левиця' },
+    { src: '//images/X7Fo8NnZdQxSDvAPKZC8.webp', alt: 'Молодий лев' }
   ];
 
   return (
     <main className="container px-4 py-4 flex-grow-1">
       <article>
-        <h2 className="h2 text-warning mb-4">Фотогалерея зайців</h2>
+        <h2 className="h2 text-warning mb-4">Фотогалерея левів</h2>
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-indicators">
             {images.map((_, index) => (

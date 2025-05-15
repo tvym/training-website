@@ -26,7 +26,8 @@ function Rehabilitation() {  // Стан для зберігання даних 
     height: '',
     weight: '',
     gender: 'male',
-    description: ''
+    description: '',
+    prideSize :''
   });
 
   // При рендерингу компонента, отримуємо всіх левів
@@ -85,7 +86,8 @@ function Rehabilitation() {  // Стан для зберігання даних 
       height: '',
       weight: '',
       gender: 'male',
-      description: ''
+      description: '',
+      prideSize :''
     });
     setShowAddModal(true);
   };
@@ -99,7 +101,8 @@ function Rehabilitation() {  // Стан для зберігання даних 
       height: lion.height,
       weight: lion.weight,
       gender: lion.gender,
-      description: lion.description || ''
+      description: lion.description || '',
+      prideSize: lion.prideSize
     });
     setShowEditModal(true);
   };
@@ -256,6 +259,7 @@ function Rehabilitation() {  // Стан для зберігання даних 
                 <th>Вага (кг)</th>
                 <th>Стать</th>
                 <th>Опис</th>
+                <th>Кількість індивідів у прайді</th>
                 <th>Дата додавання</th>
                 <th>Дії</th>
               </tr>
@@ -269,6 +273,7 @@ function Rehabilitation() {  // Стан для зберігання даних 
                   <td>{lion.weight}</td>
                   <td>{lion.gender === 'male' ? 'Самець' : 'Самиця'}</td>
                   <td>{lion.description}</td>
+                  <td>{lion.prideSize}</td>
                   <td>{lion.dateAdded ? formatDate(lion.dateAdded) : 'Н/Д'}</td>
                   <td>
                     <button
@@ -409,6 +414,20 @@ function Rehabilitation() {  // Стан для зберігання даних 
                       ></textarea>
                     </div>
                   </div>
+                  <div className="row mb-3">
+                    <label htmlFor="prideSize" className="col-sm-3 col-form-label">Кількість індивідів у прайді</label>
+                    <div className="col-sm-9">
+                      <input 
+                        type="string" 
+                        className="form-control" 
+                        id="prideSize" 
+                        name="prideSize" 
+                        value={formData.prideSize} 
+                        onChange={handleInputChange}
+                        required
+                      />
+                    </div>
+                  </div>
                 </fieldset>
                 <footer className="d-flex justify-content-end">
                   <button type="button" className="btn btn-secondary me-2" onClick={() => setShowAddModal(false)}>
@@ -547,6 +566,20 @@ function Rehabilitation() {  // Стан для зберігання даних 
                         onChange={handleInputChange}
                         rows={3}
                       ></textarea>
+                    </div>
+                  </div>
+                  <div className="row mb-3">
+                    <label htmlFor="prideSize" className="col-sm-3 col-form-label">Кількість індивідів у прайді</label>
+                    <div className="col-sm-9">
+                      <input 
+                        type="string" 
+                        className="form-control" 
+                        id="prideSize" 
+                        name="prideSize" 
+                        value={formData.prideSize} 
+                        onChange={handleInputChange}
+                        required
+                      />
                     </div>
                   </div>
                 </fieldset>                

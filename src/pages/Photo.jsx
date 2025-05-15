@@ -7,8 +7,8 @@ function Photo() {
     { src: '/images/7bwx1JU4ITGWfUfq9lS3.webp', alt: 'Гарний лев' },
     { src: '/images/qHTCNtrq88BOnEkXDSNm.webp', alt: 'Лев біля води' },
     { src: '/images/tKhqxkD4V4umSGdYcrVN.webp', alt: 'Молоді леви' },
-    { src: '//images/v16rNxfAju6fNGFB1pzS.webp', alt: 'Левиця' },
-    { src: '//images/X7Fo8NnZdQxSDvAPKZC8.webp', alt: 'Молодий лев' }
+    { src: '/images/v16rNxfAju6fNGFB1pzS.webp', alt: 'Левиця' },
+    { src: '/images/X7Fo8NnZdQxSDvAPKZC8.webp', alt: 'Молодий лев' }
   ];
 
   return (

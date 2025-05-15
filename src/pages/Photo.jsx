@@ -3,12 +3,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Photo() {
   const images = [
-    { src: '/images/1200px-haas-in-het-grasjpg.webp', alt: 'Зайці в траві' },
-    { src: '/images/1200px-hasebeioberwerbejpg.webp', alt: 'Зайці в полі' },
-    { src: '/images/european-hare-6121jpg.webp', alt: 'Європейський заєць' },
-    { src: '/images/fFKuESpf7VTCGBNPscig.webp', alt: 'Зайці на лузі' },
-    { src: '/images/halljnes.webp', alt: 'Зайці в лісі' },
-    { src: '/images/zu6YRoYqGYVyExZ54dDT.webp', alt: 'Зайці на лузі' }
+    { src: '/images/1200px-haas-in-het-grasjpg.webp', alt: 'Дикий лев' },
+    { src: '/images/1200px-hasebeioberwerbejpg.webp', alt: 'Гарний лев' },
+    { src: '/images/european-hare-6121jpg.webp', alt: 'Лев біля води' },
+    { src: '/images/fFKuESpf7VTCGBNPscig.webp', alt: 'Молоді леви' },
+    { src: '/images/halljnes.webp', alt: 'Левиця' },
+    { src: '/images/zu6YRoYqGYVyExZ54dDT.webp', alt: 'Молодий лев' }
   ];
 
   return (
